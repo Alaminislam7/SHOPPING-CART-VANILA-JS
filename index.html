@@ -12,71 +12,36 @@
 
 <body>
 
-   <section>
-      <div class="container">
-         <div class="cart">
-            <div class="col-md-12 col-lg-10 mx-auto">
-               <div class="cart-item">
-                  <div class="row">
-                     <div class="col-md-7 center-item">
-                        <img src="images/product-1.png" alt="">
-                        <h5>iPhone 11 128GB Black</h5>
-                     </div>
-
-                     <div class="col-md-5 center-item">
-                        <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
-                        </div>
-                        <h5>$1219</h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
-                     </div>
+   <form id="form1" runat="server">
+      <div>
+          <div class="click-cart">
+              <div class="cart-row2">
+                  <span class="cart-item cart-header cart-column">ITEM</span>
+                  <span class="cart-price cart-header cart-column">PRICE</span>
+                  <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+              </div>
+              <div class="cart-row">
+                  <div class="lakn">
+                      <img class="shop-item-cart" src="images/product-1.png">
+                      <span class="shop-title">Product 1</span>
+                      <span class="shop-price">$19.99</span>
+                      <input class="quantity-input" type="number" value="1" />
+                      <button class="delete-cart">X</button>
                   </div>
-               </div>
-
-               <div class="cart-item">
-                  <div class="row">
-                     <div class="col-md-7 center-item mx-auto">
-                        <img src="images/product-2.png" alt="">
-                        <h5>iPhone 11 Silicone Case - Black</h5>
-                     </div>
-                     <div class="col-md-5 center-item">
-                        <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
-
-                        </div>
-                        <h5>$59</h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
-                     </div>
-                  </div>
-               </div>
-
-               <div class="cart-item">
-                  <div class="row">
-
-                     <div class="col-md-8">
-                        <h5>Subtotal: </h5>
-                        <h5>Tax:</h5>
-                        <h5>Total:</h5>
-                     </div>
-
-                     <div class="col-md-4 status">
-                        <h5>$1,278</h5>
-                        <h5>$0</h5>
-                        <h5>$1,278</h5>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-12 pt-4 pb-4">
-                  <button type="button" class="btn btn-success check-out">Check Out</button>
-               </div>
-            </div>
-         </div>
+              </div>
+              <div class="clear-checkout">
+                  <button class="checkout">Checkout</button>
+                  <button class="clear-cart">Clear Cart</button>
+              </div>
+              <div class="cart-total">
+                  <strong class="cart-total-title">Total</strong>
+                  <span class="cart-total-price">$10.79</span>
+              </div>
+          </div>
       </div>
-   </section>
+  </form>
+
+   <script src="app.js"></script>
 </body>
 
 </html>
